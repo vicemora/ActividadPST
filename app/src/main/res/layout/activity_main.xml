@@ -18,6 +18,7 @@
         android:id="@+id/bProfesor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="profesor"
         android:text="Profesor"
         tools:layout_editor_absoluteX="169dp"
         tools:layout_editor_absoluteY="233dp" />
@@ -26,6 +27,7 @@
         android:id="@+id/bEstudiante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="estudiante"
         android:text="Estudiante"
         tools:layout_editor_absoluteX="155dp"
         tools:layout_editor_absoluteY="341dp" />
