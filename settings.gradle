@@ -1,0 +1,2 @@
+rootProject.name = "Calificaciones PST"
+include ':app'
