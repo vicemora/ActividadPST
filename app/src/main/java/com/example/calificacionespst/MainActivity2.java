@@ -49,7 +49,30 @@ public class MainActivity2 extends AppCompatActivity {
                                                                             Toast.LENGTH_SHORT).show();
     }
 
+    public void eliminar(View v) {
+        SQLiteDatabase bd = admin.getWritableDatabase(); //Obteniendo base de datos en modo escritura
+        matricula= et1.getText().toString(); //Obtiene la matricula pasada como parametro
+        //Eliminar el registro de acuerdo a la matricula
+        bd.execSQL("delete from calificaciones where matricula = "+matricula);
+        bd.close();
+        et1.setText("");
+        et2.setText("");
+        et3.setText("");
+        Toast.makeText(this, "Se borró al estudiante con matricula"+matricula,
+                Toast.LENGTH_SHORT).show();
+    }
 
+    public void modificacion(View v) {
+
+        SQLiteDatabase bd = admin.getWritableDatabase(); //Obteniendo base de datos en modo escritura
+        matricula = et1.getText().toString();   //Obtiene la matricula pasada como parametro
+        nombre = et2.getText().toString(); //Obtiene nombre pasada como parametro para realizar el cambio
+        calificacion = et3.getText().toString(); //Obtiene calificacion
+        bd.execSQL("update calificaciones set matricula="+matricula+",nombre='"+nombre+"',calificacion="+calificacion+" where matricula="+matricula);
+        bd.close();
+        Toast.makeText(this, "se modificaron los datos del estudiante con matricula"+matricula, Toast.LENGTH_SHORT)
+                .show();
+    }
 
 
 

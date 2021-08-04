@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <EditText
         android:id="@+id/et2p"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:onClick="ingresar"
-        android:text="Ingresar"
+        android:text="Ingresar Calificacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et3p" />
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:onClick="eliminar"
-        android:text="Eliminar"
+        android:text="Eliminar Registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:onClick="modificacion"
-        android:text="Modificar"
+        android:text="Modificar Calificacion"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
