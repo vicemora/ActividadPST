@@ -50,4 +50,13 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
+
+
+
+
+
+    public void volver(View view) {
+        finish();
+    }
+
 }
